@@ -1,0 +1,144 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editable Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Editable Resume Builder by Laiba Naz</h1>
+    <form id="resumeForm">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="phone">Phone</label>
+            <input type="text" id="phone" name="phone" required><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Education</legend>
+            <label for="Education">Education</label>
+            <textarea name="Education" id="Education" rows="4"></textarea><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Experience</legend>
+            <label for="Experience">Experience</label>
+            <textarea name="Experience" id="Experience" rows="4"></textarea><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Skills</legend>
+            <label for="Skills">Skills</label>
+            <textarea name="Skills" id="Skills" rows="4"></textarea><br>
+        </fieldset>
+
+        <button type="submit">Generate Resume Below</button>
+    </form>
+
+    <br>
+
+    <div id="resume-display" contenteditable="true">
+        <h2>Resume</h2>
+        <p><strong>Name: </strong><span id="display-name"></span></p>
+        <p><strong>Email: </strong><span id="display-email"></span></p>
+        <p><strong>Phone: </strong><span id="display-phone"></span></p>
+
+        <h3>Education</h3>
+        <p id="display-education" contenteditable="true"></p>
+
+        <h3>Experience</h3>
+        <p id="display-experience" contenteditable="true"></p>
+
+        <h3>Skills</h3>
+        <p id="display-skills" contenteditable="true"></p>
+    </div>
+
+    <br>
+
+    <div id="shareable-link-container" style="display: none;">
+        <h2>Shareable Link</h2>
+        <p>Here is your unique link to view or edit your resume:</p>
+        <a href="#" id="shareable-link" target="_blank"></a>
+        <br>
+        <button id="download-pdf"><b>Download as PDF</b></button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <h1>Editable Resume Builder by Laiba Naz</h1>
+    <form id="resumeForm">
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" required><br><br>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required><br><br>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" required><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Education</legend>
+
+            <label for="education">Education:</label><br>
+            <textarea id="education" rows="4" cols="50"></textarea><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Work Experience</legend>
+
+            <label for="experience">Experience:</label><br>
+            <textarea id="experience" rows="4" cols="50"></textarea><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Skills</legend>
+
+            <label for="skills">Skills:</label><br>
+            <textarea id="skills" rows="4" cols="50"></textarea><br><br>
+        </fieldset>
+        <br>
+
+        <button type="submit">Generate Resume</button>
+    </form>
+
+    <div id="resume-display"></div>
+
+    <div id="shareable-link-container" style="display:none;">
+        <p>Shareable Link: <a id="shareable-link" href="#" target="_blank"></a></p>
+    </div>
+
+    <button id="download-pdf">Download as PDF</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
